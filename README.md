@@ -1,2 +1,2 @@
 # Helados
-Examen de aplicaciñon web.
+Examen de aplicación web.
