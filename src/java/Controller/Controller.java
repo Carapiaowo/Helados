@@ -9,6 +9,7 @@ import Model.Admin;
 import Model.AdminCRUD;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,10 +21,9 @@ import javax.servlet.http.HttpServletResponse;
  * @author Jose Manuel
  */
 public class Controller extends HttpServlet {
-    
+
     AdminCRUD admcrud = new AdminCRUD();
-    Admin adm = new Admin();
-    
+    List<Admin> datos_adm = new ArrayList<>();
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,19 +36,7 @@ public class Controller extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Controller</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Controller at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -63,9 +51,38 @@ public class Controller extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
-    }
+        datos_adm = admcrud.adminConsulta();
 
+        String user_adm, correo_adm, pass_adm;
+        user_adm = request.getParameter("usu_adm");
+        correo_adm = request.getParameter("cor_adm");
+        pass_adm = request.getParameter("con_adm");
+        String accion_adm = request.getParameter("accion_adm");
+        System.out.println(user_adm + correo_adm + pass_adm);
+        System.out.println("La cosa esta xD: " + accion_adm);
+        if (accion_adm.equalsIgnoreCase("consulta_adm")) {
+
+            accion_adm = "admin/consulta_adm.jsp";
+
+        } else if (accion_adm.equalsIgnoreCase("agregar_adm")) {
+            accion_adm = "admin/consulta_adm.jsp";
+
+            Admin adm = new Admin();
+            adm.setUser(user_adm);
+            adm.setPass(pass_adm);
+            adm.setCorreo(correo_adm);
+            admcrud.adminAgregar(adm);
+
+        } else if (accion_adm.equalsIgnoreCase("agregar_consulta_adm")) {
+
+            accion_adm = "admin/agregar_adm.jsp";
+            request.getRequestDispatcher(accion_adm).forward(request, response);
+        }
+
+        request.setAttribute("datos_adm", datos_adm);
+        request.getRequestDispatcher(accion_adm).forward(request, response);
+
+    }
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -77,18 +94,7 @@ public class Controller extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String accion = request.getParameter("accion");
-        
-        switch(accion){
-            
-            case "Consultar":
-                List<Admin>datos = admcrud.adminConsulta();
-                System.out.println("Todo bien XD");
-                request.setAttribute("datos", datos);
-                request.getRequestDispatcher("index.jsp").forward(request, response);
-            break;
-            
-        }
+        processRequest(request, response);
     }
 
     /**
