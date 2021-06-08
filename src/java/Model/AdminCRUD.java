@@ -35,9 +35,24 @@ public class AdminCRUD {
                 lista.add(adm);
             }
         }catch(Exception e){
-            System.out.println("No se pudo visualizar");
+            System.out.println("No se pudo visualizar: "+e);
         }
         
         return lista;
+    }
+    
+    public boolean adminAgregar(Admin adm){
+        
+        String sql = "INSERT INTO madmin (usuario_admin, correo_admin, contrasena_admin) VALUES ('" + adm.getUser() + "','" + adm.getCorreo() + "', '" + adm.getPass() + "' );";    
+        
+        try{
+            con=c.connect();
+            ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        
+    return false;
     }
 }

@@ -3,12 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/carap/Documents/4to/PSW/ProyectoHelados/src/java/Model/Connect.java</file>
-            <file>file:/C:/Users/carap/Documents/4to/PSW/ProyectoHelados/src/java/Controller/Controller.java</file>
-            <file>file:/C:/Users/carap/Documents/4to/PSW/ProyectoHelados/web/index.jsp</file>
-            <file>file:/C:/Users/carap/Documents/4to/PSW/ProyectoHelados/src/java/Model/Admin.java</file>
-            <file>file:/C:/Users/carap/Documents/4to/PSW/ProyectoHelados/src/java/Model/AdminCRUD.java</file>
-            <file>file:/C:/Users/carap/Documents/4to/PSW/ProyectoHelados/src/java/Model/Product.java</file>
+            <file>file:/C:/Users/diana/Desktop/Helados/web/index.jsp</file>
+            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Model/Connect.java</file>
+            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Model/Productos.java</file>
+            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Model/Carrito.java</file>
+            <file>file:/C:/Users/diana/Desktop/Helados/web/verCarrito.jsp</file>
+            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Controller/AccionesCarrito.java</file>
+            <file>file:/C:/Users/diana/Desktop/Helados/web/JS/alertas.js</file>
         </group>
     </open-files>
 </project-private>
