@@ -51,19 +51,24 @@
                         </thead>
                         <tbody>
                             <c:forEach var="car" items="${carrito}">
+                            <form method="POST" action="AccionesCarrito">
                                 <tr>
                                     <td>${car.getItem()}</td>
                                     <td>${car.getNombres()}</td>
                                     <td>${car.getDescripcion()}</td>
                                     <td>${car.getPrecioCompra()}</td>
-                                    <td>${car.getCantidad()}</td>
+                                    <td>
+                                        
+                                        <input readonly="" min ="1" name="cantidad" href="#" id="cant" value="${car.getCantidad()}" class="form-control col-sm-2">
+                                        
+                                    </td>
                                     <td>${car.getSubtotal()}</td>
 
                                     <td>
-                                        <input type="hidden" id="idp" value="${car.getIdProducto()}">
-                                        <a href="" id="btnBorrar" class="btn btn-outline-danger">Eliminar</a>
+                                        <a type="submit" href="AccionesCarrito?accion_carrito=Borrar&idp=${car.getIdProducto()}"  class="btn btn-outline-danger">Eliminar</a>
                                     </td>
                                 </tr>
+                            </form>
                             </c:forEach>
                         </tbody>
                     </table>
@@ -88,13 +93,10 @@
                 </div>
             </div>
         </div>
-
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="JS/alertas.js" type="text/javascript"></script>
-        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-
     </body>
 </html>

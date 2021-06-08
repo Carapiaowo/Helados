@@ -48,41 +48,81 @@ public class AccionesCarrito extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         String accion = request.getParameter("accion_carrito");
+        System.out.println(accion);
         productos = pr.menu();
         switch (accion) {
-            case "AgregarCarrito":
 
+            case "AgregarCarrito":
+                int pos = 0;
+                cantidad = 1;
                 int idpro = Integer.parseInt(request.getParameter("id_car"));
 
-                item = item + 1;
+                if (carrito.size() > 0) {
 
-                Carrito car = new Carrito();
+                    for (int i = 0; i < carrito.size(); i++) {
+                        if (idpro == carrito.get(i).getIdProducto()) {
+                            pos = i;
+                        }
+                    }
+                    if (idpro == carrito.get(pos).getIdProducto()) {
+                        cantidad = carrito.get(pos).getCantidad() + cantidad;
+                        double sbt = carrito.get(pos).getPrecioCompra() * cantidad;
+                        carrito.get(pos).setCantidad(cantidad);
+                        carrito.get(pos).setSubtotal(sbt);
+                    } else {
+                        item = item + 1;
 
-                p = pr.consultaId(idpro);
+                        Carrito car = new Carrito();
 
-                car.setItem(item);
-                car.setIdProducto(p.getId());
-                car.setNombres(p.getNombre());
-                car.setDescripcion(p.getDescripcion());
-                car.setPrecioCompra(p.getPrecio());
-                car.setCantidad(cantidad);
-                car.setSubtotal((float) (cantidad * p.getPrecio()));
-                carrito.add(car);
+                        p = pr.consultaId(idpro);
+
+                        car.setItem(item);
+                        car.setIdProducto(p.getId());
+                        car.setNombres(p.getNombre());
+                        car.setDescripcion(p.getDescripcion());
+                        car.setPrecioCompra(p.getPrecio());
+                        car.setCantidad(cantidad);
+                        car.setSubtotal((float) (cantidad * p.getPrecio()));
+                        carrito.add(car);
+                    }
+
+                } else {
+                    item = item + 1;
+
+                    Carrito car = new Carrito();
+
+                    p = pr.consultaId(idpro);
+
+                    car.setItem(item);
+                    car.setIdProducto(p.getId());
+                    car.setNombres(p.getNombre());
+                    car.setDescripcion(p.getDescripcion());
+                    car.setPrecioCompra(p.getPrecio());
+                    car.setCantidad(cantidad);
+                    car.setSubtotal((float) (cantidad * p.getPrecio()));
+                    carrito.add(car);
+                }
+
                 request.setAttribute("contador", carrito.size());
                 request.getRequestDispatcher("AccionesCarrito?accion_carrito=home").forward(request, response);
                 break;
-                
-            case "Borrar":
-                int idproducto = Integer.parseInt(request.getParameter("idp"));
 
+            case "Borrar":
+                int idp;
+                idp = Integer.parseInt(request.getParameter("idp"));
                 for (int i = 0; i < carrito.size(); i++) {
-                    if (carrito.get(i).getIdProducto() == idproducto) {
+                    if (carrito.get(i).getIdProducto() == idp) {
                         carrito.remove(i);
+                        
                     }
                 }
+                request.getRequestDispatcher("AccionesCarrito?accion_carrito=Carrito").forward(request, response);
+
                 break;
-                
+
+            
             case "Carrito":
                 pagototal = 0.0;
                 request.setAttribute("carrito", carrito);
