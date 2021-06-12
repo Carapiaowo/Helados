@@ -96,6 +96,10 @@
         <servlet-name>AccionesCarrito</servlet-name>
         <servlet-class>Controller.AccionesCarrito</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>borrarcantidad</servlet-name>
+        <servlet-class>Controller.borrarcantidad</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>
         <url-pattern>/Controller</url-pattern>
@@ -191,6 +195,10 @@
     <servlet-mapping>
         <servlet-name>AccionesCarrito</servlet-name>
         <url-pattern>/AccionesCarrito</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>borrarcantidad</servlet-name>
+        <url-pattern>/borrarcantidad</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

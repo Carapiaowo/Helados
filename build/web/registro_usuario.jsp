@@ -55,11 +55,11 @@
             </div>
             <div class="input-box">
             <span class="details">Edad</span>
-            <input type="number" placeholder="Introduce tu edad"  name="edad"  onkeypress="return validarnn(event);">
+            <input type="number" placeholder="Introduce tu edad" name="edad" size="2" onkeypress="return validarnn(event);">
             </div>
              <div class="input-box">
             <span class="details">Nombre de usuario</span>
-            <input type="text" placeholder="Nombre de usuario" maxlength="15" required name="user">
+            <input type="text" placeholder="Nombre de usuario" maxlength="15" required name="user" onkeypress="return validarn(event);">
           </div>
                <div class="input-box">
             <span class="details">Contraseña</span>

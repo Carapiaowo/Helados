@@ -37,7 +37,7 @@
           </div>
             <div class="input-box">
             <span class="details">Precio</span>
-            <input type="number" placeholder="Precio"  required name="precio" >
+            <input type="number" placeholder="Precio" min="1" required name="precio" >
           </div>
              <div class="input-box">
             <span class="details">Stock</span>

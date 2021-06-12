@@ -86,7 +86,7 @@ public class CdescuentoCRUD {
        
         try{
             Connection con = Conexion.getConexion();
-            String q = "select * from cescuento";
+            String q = "select * from cdescuento";
             
             PreparedStatement ps = con.prepareStatement(q);
 

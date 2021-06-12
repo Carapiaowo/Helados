@@ -5,19 +5,20 @@
  */
 package Controller;
 
+import Model.CcantidadCRUD;
+import Model.CdescuentoCRUD;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author Danielao.0
  */
-public class cerrarSesion extends HttpServlet {
+public class borrarcantidad extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,9 +34,18 @@ public class cerrarSesion extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-           HttpSession sesion = request.getSession();
-           sesion.removeAttribute("usuario");
-             request.getRequestDispatcher("index.html").forward(request, response);
+                          int id = Integer.parseInt(request.getParameter("id"));
+            
+               int estatus = CcantidadCRUD.borrarcantidad(id);
+      
+        if(estatus>0){
+            System.out.println("Borrado");
+           response.sendRedirect("detallesGestionar.jsp");
+       }else{
+           response.sendRedirect("error.jsp");
+            System.out.println("no borrado");
+       }
+        
         }
     }
 

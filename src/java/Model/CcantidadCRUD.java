@@ -21,7 +21,7 @@ public class CcantidadCRUD {
         int estatus = 0;
         try{
             Connection con = Conexion.getConexion();
-            String q = "insert into cpresentacion (valor_cantidad, unidad_cantidad ) values(?,?)";
+            String q = "insert into ccantidad(valor_cantidad, unidad_cantidad ) values(?,?)";
             
             PreparedStatement ps = con.prepareStatement(q);
   

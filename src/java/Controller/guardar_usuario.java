@@ -67,7 +67,7 @@ public class guardar_usuario extends HttpServlet {
        int estatus = UsuarioCRUD.registrar_usuario(u);
        
        if(estatus>0){
-           response.sendRedirect("registro_exitoso.html");
+           response.sendRedirect("registro_exitoso.jsp");
        }else{
            response.sendRedirect("error.jsp");
        }

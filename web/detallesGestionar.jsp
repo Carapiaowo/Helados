@@ -183,8 +183,8 @@
                     <tr>
                         <td> <%=u.getId_cantidad() %> </td>
                         <td> <%=u.getValor_cantidad() %> </td>
-                        <td> <%=u.getValor_cantidad() %> </td>
-                        <td> <a href="borrar_cantidad?id=<%=u.getId_cantidad() %>" >Borrar</a> </td>
+                        <td> <%=u.getUnidad_cantidad() %> </td>
+                        <td> <a href="borrarcantidad?id=<%=u.getId_cantidad() %>" >Borrar</a> </td>
                     </tr>    
                     
                     <%
@@ -201,7 +201,7 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Valor</span>
-            <input type="number" placeholder="Valor" maxlength="30" required name="val" onkeypress="return validarn(event);" >
+            <input type="number" placeholder="Valor" maxlength="30" required name="val" onkeypress="return validarnn(event);" >
           </div>
             <div class="input-box">
             <span class="details">Unidad</span>
@@ -224,7 +224,7 @@
                       <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Descuento</th>
+                    <th>Descuentos</th>
                 </tr>        
             </thead>
             <tbody
@@ -234,7 +234,7 @@
                     %>
                     <tr>
                         <td> <%=u.getIddescuento()%> </td>
-                        <td> <%=u.getValor() %> </td>
+                        <td> <%=u.getValor()+"%" %> </td>
                         <td> <a href="borrardescuento?id=<%=u.getIddescuento()%>" >Borrar</a> </td>
                     </tr>    
                     

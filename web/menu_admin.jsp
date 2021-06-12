@@ -22,7 +22,7 @@
            
             <nav id="navegador">  
                 <div class="icono" id="icono">
-                    <a href="index.html"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Ben_and_jerry_logo.svg"> Salir</a>
+                    <a href="cerrarSesion"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Ben_and_jerry_logo.svg"> Salir</a>
               
                 </div>
                 <div class="menu" id="ayuda">
@@ -50,9 +50,7 @@
                                 <li><a onClick="frame('registro_promo.jsp')">Agregar</a></li>
                                 <li><a onClick="frame('consultarPromociones.jsp')">Consultar</a></li>
                             </ul>
-                        </li>
-                         <li class="cat"><a class="cat" href="index.html">Salir</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </nav>

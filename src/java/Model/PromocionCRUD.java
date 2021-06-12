@@ -21,12 +21,13 @@ public class PromocionCRUD {
         int estatus = 0;
         try{
             Connection con = Conexion.getConexion();
-            String q = "insert into mpromocion(nom_promocion, desc_promocion) values(?,?)";
+            String q = "insert into mpromocion(nom_promocion, iddescuento, desc_promocion) values(?,?,?)";
             
             PreparedStatement ps = con.prepareStatement(q);
             
             ps.setString(1, u.getNom_promocion());
-           ps.setInt(2, u.getIddescuento());
+            ps.setInt(2, u.getIddescuento());
+           ps.setString(3, u.getDesc_promocion() );
            
             estatus = ps.executeUpdate();
             System.out.println("Registro de promo");

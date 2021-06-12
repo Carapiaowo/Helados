@@ -43,7 +43,7 @@ public class CsaboresCRUD{
         int estatus = 0;
          try{
             Connection con = Conexion.getConexion();
-            String q = "delete from csabores where id_sabor = ?";
+            String q = "delete from csabores where id_sabor= ?";
             
             PreparedStatement ps = con.prepareStatement(q);
             ps.setInt(1, id);

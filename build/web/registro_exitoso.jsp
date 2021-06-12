@@ -18,7 +18,7 @@
       <div class="the-bg"></div>
     <div class="container">
     <div class="logo">
-                       <img src="img/camion.png">
+        <a href="index.html"><img src="img/camion.png"></a>        
                       
             </div>
     <div class="title">Registro exitoso</div>

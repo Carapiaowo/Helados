@@ -3,15 +3,61 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/Cdescuento.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/login_admin.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/Login.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/AdminCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/AccionesCarrito.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/JS/base.js</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarUsuarios.jsp</file>
-            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarProductos.jsp</file>
-            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/actualizarAdmin.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/borrardescuento.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/guardar_usuario.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/registro_promo.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/guardar_cantidad.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/detallesGestionar.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/guardar_promocion.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/CpresentacionCRUD.java</file>
             <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/actualizarAdmin.java</file>
             <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/editarusuario.jsp</file>
-            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/AdminCRUD.java</file>
-            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/UsuarioCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/PromocionCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/borrarcantidad.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/borrarsabor.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/editarusuariousu.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/cerrarSesion.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarPromociones.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/registro_exitoso.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/Validar.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/bienvenida.html</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/Admin.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/registro_usuario.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/Validar2.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/registro_producto.jsp</file>
             <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarAdmins.jsp</file>
             <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/actualizarUsuario.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/CcantidadCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/borrarpresentacion.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarProductos.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/CdescuentoCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/UsuarioCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/menu_usuario.html</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/menu_admin.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/registro_admin.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/actualizarAdmin.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/verCarrito.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/Cpresentacion.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/guardar_sabor.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/verProductos.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/Promocion.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/CSS/masterstyle.css</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/CSS/principal.css</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/Productos.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/guardar_admin.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/Usuario.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/JS/validar.js</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/JS/admin.js</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/CsaboresCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/verpromocionesusu.jsp</file>
         </group>
     </open-files>
 </project-private>

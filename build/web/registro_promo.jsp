@@ -46,6 +46,10 @@
                  <% } %>
             </select>
             </div>
+                <div class="input-box">
+            <span class="details">Descripcion</span>
+            <input type="text" placeholder="Ingresa el nombre" maxlength="40" required name="desc" >
+          </div>
             <div class="contbtn">
           <input type="submit" name="accion" value="Registrar" class="btn btn-default">
         </div>

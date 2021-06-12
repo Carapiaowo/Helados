@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
-/**
+/*
  *
  * @author CarapiaOwO
  */
@@ -65,7 +65,7 @@ public class Productos {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                Producto pr = new Producto();
+               Producto pr = new Producto();
                pr.setId_producto(rs.getInt(1));
                pr.setId_sabor(rs.getInt(2));
                pr.setId_cantidad(rs.getInt(3));

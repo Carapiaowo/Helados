@@ -39,7 +39,7 @@ public class guardar_cantidad extends HttpServlet {
          
        
        valor = Integer.parseInt(request.getParameter("val"));
-       unidad = request.getParameter("unidad");
+       unidad = request.getParameter("uni");
        
        Ccantidad pre = new Ccantidad();
        
@@ -49,7 +49,7 @@ public class guardar_cantidad extends HttpServlet {
        int estatus = CcantidadCRUD.registrarCantidad(pre);
        
        if(estatus>0){
-           System.out.println("presentacion registrada");
+           System.out.println("cantidad registrada");
            response.sendRedirect("detallesGestionar.jsp");
        }else{
            response.sendRedirect("error.jsp");
