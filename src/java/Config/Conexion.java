@@ -22,9 +22,9 @@ public class Conexion {
         try{
             Class.forName("com.mysql.jdbc.Driver");
             String url, userName, password;
-            url="jdbc:mysql://localhost/helados_bd";
-            userName="root";
-            password="dfloresq";
+            url="jdbc:mysql://us-cdbr-east-03.cleardb.com/heroku_fc24fcc017152bd";
+            userName="baeb4af92d59c2";;
+            password="40457591";
             return DriverManager.getConnection(url, userName, password);
      
         }catch(SQLException sq){

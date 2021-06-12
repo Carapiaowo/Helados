@@ -12,11 +12,11 @@ public class Connect {
     private Statement set;
    
     public Connection connect(){
-        String URL = "jdbc:mysql://localhost/helados_bd";
+        String URL = "jdbc:mysql://us-cdbr-east-03.cleardb.com/heroku_fc24fcc017152bd";
                 //driver:gestor:puerto//IP/nombreBase
                 //mysql://us-cdbr-east-03.cleardb.com/heroku_fc24fcc017152bd
-        String userName = "root";
-        String password = "dfloresq";
+        String userName ="baeb4af92d59c2";
+        String password =  "40457591";
         try{
             Class.forName("com.mysql.jdbc.Driver");
             con = DriverManager.getConnection(URL, userName, password);
