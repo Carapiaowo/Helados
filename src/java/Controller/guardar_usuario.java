@@ -36,7 +36,7 @@ public class guardar_usuario extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
          
-        String user, pass, fechnac, tel, cel, nom, appat, apmat, domicilio;
+       String user, pass, fechnac, tel, cel, nom, appat, apmat, domicilio;
        int edad;
        
        user = request.getParameter("user");
@@ -67,6 +67,7 @@ public class guardar_usuario extends HttpServlet {
        int estatus = UsuarioCRUD.registrar_usuario(u);
        
        if(estatus>0){
+           System.out.println("exitoso");
            response.sendRedirect("registro_exitoso.jsp");
        }else{
            response.sendRedirect("error.jsp");
