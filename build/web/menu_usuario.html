@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Gestión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/masterstyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        
+        <header class="header">
+           
+            <nav id="navegador">  
+                <div class="icono" id="icono">
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Ben_and_jerry_logo.svg"></a>
+                </div>
+                <div class="menu" id="ayuda">
+                    <ul class="listap">
+                        <li class="cat" ><a class="cat">Mi cuenta</a>
+                            <ul class="listah">
+                                <li><a onClick="frame('editarusuariousu.jsp')">Editar</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat"><a class="cat">Comprar</a>
+                            <ul class="listah">
+                                <li><a onClick="frame('verProductos.jsp')">Productos</a></li>
+                                 <li><a onClick="frame('verpromocionesusu.jsp')">Promociones</a></li>
+                            </ul>
+                        </li>
+                         <li class="cat"><a class="cat" href="index.html">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="section1">
+            <div class="contenedor">
+            <iframe name=" " id="frame" src="bienvenida.html"></iframe>
+           </div>
+        </section>
+
+        <script src="JS/script.js"></script>
+    </body>
+</html>

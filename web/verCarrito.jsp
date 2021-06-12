@@ -43,7 +43,6 @@
                             <tr>
                                 <th>ITEM</th>
                                 <th>NOMBRE</th>
-                                <th>DESCRIPCIÓN</th>
                                 <th>PRECIO</th>
                                 <th>CANTIDAD</th>
                                 <th>SUBTOTAL</th>
@@ -54,7 +53,6 @@
                                 <tr>
                                     <td>${car.getItem()}</td>
                                     <td>${car.getNombres()}</td>
-                                    <td>${car.getDescripcion()}</td>
                                     <td>${car.getPrecioCompra()}</td>
                                     <td>${car.getCantidad()}</td>
                                     <td>${car.getSubtotal()}</td>

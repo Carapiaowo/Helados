@@ -6,7 +6,7 @@
 package Controller;
 
 import Model.Carrito;
-import Model.Product;
+import Model.Producto;
 import Model.Productos;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -24,8 +24,8 @@ import javax.servlet.http.HttpServletResponse;
 public class AccionesCarrito extends HttpServlet {
 
     Productos pr = new Productos();
-    Product p = new Product();
-    List<Product> productos = new ArrayList<>();
+    Producto p = new Producto();
+    List<Producto> productos = new ArrayList<>();
     List<Carrito> carrito = new ArrayList<>();
     int item;
     double pagototal = 0.0;
@@ -62,12 +62,11 @@ public class AccionesCarrito extends HttpServlet {
                 p = pr.consultaId(idpro);
 
                 car.setItem(item);
-                car.setIdProducto(p.getId());
-                car.setNombres(p.getNombre());
-                car.setDescripcion(p.getDescripcion());
-                car.setPrecioCompra(p.getPrecio());
+                car.setIdProducto(p.getId_producto());
+                car.setNombres(p.getNom_producto());
+                car.setPrecioCompra(p.getPrecio_producto());
                 car.setCantidad(cantidad);
-                car.setSubtotal((float) (cantidad * p.getPrecio()));
+                car.setSubtotal((float) (cantidad * p.getPrecio_producto()));
                 carrito.add(car);
                 request.setAttribute("contador", carrito.size());
                 request.getRequestDispatcher("AccionesCarrito?accion_carrito=home").forward(request, response);

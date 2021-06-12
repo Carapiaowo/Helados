@@ -3,13 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/diana/Desktop/Helados/web/index.jsp</file>
-            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Model/Connect.java</file>
-            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Model/Productos.java</file>
-            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Model/Carrito.java</file>
-            <file>file:/C:/Users/diana/Desktop/Helados/web/verCarrito.jsp</file>
-            <file>file:/C:/Users/diana/Desktop/Helados/src/java/Controller/AccionesCarrito.java</file>
-            <file>file:/C:/Users/diana/Desktop/Helados/web/JS/alertas.js</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarUsuarios.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarProductos.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/actualizarAdmin.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/actualizarAdmin.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/editarusuario.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/AdminCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Model/UsuarioCRUD.java</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/web/consultarAdmins.jsp</file>
+            <file>file:/C:/Users/danie/Documents/NetBeansProjects/Helados-CarapiaOwO/src/java/Controller/actualizarUsuario.java</file>
         </group>
     </open-files>
 </project-private>

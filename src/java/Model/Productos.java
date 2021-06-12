@@ -27,10 +27,10 @@ public class Productos {
     PreparedStatement ps;
     ResultSet rs;
     
-    public Product consultaId(int id){
+    public Producto consultaId(int id){
     
-        String sql = "select * from producto where idProducto="+id;
-        Product pr = new Product();
+        String sql = "select * from mproducto where id_producto="+id;
+        Producto pr = new Producto();
         try {
             con = cn.connect();
             ps = con.prepareStatement(sql);
@@ -38,12 +38,14 @@ public class Productos {
             
 
             while (rs.next()) {
-                pr.setId(rs.getInt(1));
-                pr.setNombre(rs.getString(2));
-                pr.setFoto(rs.getBinaryStream(3));
-                pr.setDescripcion(rs.getString(4));
-                pr.setPrecio(rs.getDouble(5));
-                pr.setStock(rs.getInt(6));
+                pr.setId_producto(rs.getInt(1));
+               pr.setId_sabor(rs.getInt(2));
+               pr.setId_cantidad(rs.getInt(3));
+               pr.setId_tamano(rs.getInt(4));
+               pr.setId_presentacion(rs.getInt(5));
+               pr.setPrecio_producto(rs.getInt(6));
+               pr.setStock_producto(rs.getInt(7));
+               pr.setNom_producto(rs.getString(8));
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -53,9 +55,9 @@ public class Productos {
 
     public List menu(){
 
-        List<Product> productos = new ArrayList<>();
+        List<Producto> productos = new ArrayList<>();
 
-        String sql = "select * from producto";
+        String sql = "select * from mproducto";
         
         try {
             con = cn.connect();
@@ -63,14 +65,16 @@ public class Productos {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                Product pr = new Product();
-                pr.setId(rs.getInt(1));
-                pr.setNombre(rs.getString(2));
-                pr.setFoto(rs.getBinaryStream(3));
-                pr.setDescripcion(rs.getString(4));
-                pr.setPrecio(rs.getDouble(5));
-                pr.setStock(rs.getInt(6));
-                productos.add(pr);
+                Producto pr = new Producto();
+               pr.setId_producto(rs.getInt(1));
+               pr.setId_sabor(rs.getInt(2));
+               pr.setId_cantidad(rs.getInt(3));
+               pr.setId_tamano(rs.getInt(4));
+               pr.setId_presentacion(rs.getInt(5));
+               pr.setPrecio_producto(rs.getInt(6));
+               pr.setStock_producto(rs.getInt(7));
+               pr.setNom_producto(rs.getString(8));
+               productos.add(pr);
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -79,32 +83,5 @@ public class Productos {
         return productos;
     }
 
-    public void mostrarImg(int id, HttpServletResponse response) {
-        String sql = "select * from producto where idProducto=" + id;
-        InputStream inputStream = null;
-        OutputStream outputStream = null;
-        BufferedInputStream bufferedInputStream = null;
-        BufferedOutputStream bufferedOutputStream = null;
-
-        try {
-            outputStream = response.getOutputStream();
-            con = cn.connect();
-            ps = con.prepareStatement(sql);
-            rs = ps.executeQuery();
-
-            if (rs.next()) {
-                inputStream = rs.getBinaryStream("Foto");
-            }
-            bufferedInputStream = new BufferedInputStream(inputStream);
-            bufferedOutputStream = new BufferedOutputStream(outputStream);
-            int i = 0;
-            
-            while((i=bufferedInputStream.read())!=-1){
-                bufferedOutputStream.write(i);
-            }
-
-        } catch (Exception e) {
-            System.out.println("e");
-        }
-    }
+  
 }

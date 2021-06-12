@@ -15,13 +15,12 @@ public class Carrito {
     public Carrito() {
     }
 
-    public Carrito(int item, int idProducto, int cantidad, double precioCompra, double subtotal, String descripcion, String nombres) {
+    public Carrito(int item, int idProducto, int cantidad, double precioCompra, double subtotal, String nombres) {
         this.item = item;
         this.idProducto = idProducto;
         this.cantidad = cantidad;
         this.precioCompra = precioCompra;
         this.subtotal = subtotal;
-        this.descripcion = descripcion;
         this.nombres = nombres;
     }
 
@@ -63,14 +62,6 @@ public class Carrito {
 
     public void setSubtotal(float subtotal) {
         this.subtotal = subtotal;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
     }
 
     public String getNombres() {
